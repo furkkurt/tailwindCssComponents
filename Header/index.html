@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Header Component</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-between bg-darkBlue h-16">
+      <!-- Logo -->
+      <div class="pl-2 flex flex-row">
+          <p class="text-white text-2xl font-bold font-kumbh md:text-brightRedLight">Cool</p>
+          <p class="text-brightRed text-2xl font-kumbh hidden md:flex">Responsive</p>
+          <p class="text-brightRed text-2xl font-kumbh md:text-white">Header</p>
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden justify-around space-x-4 pr-8 sm:flex">
+        <a href="#" class="text-brightRedLight font-kumbh hover:text-brightRed hover:scale-110 transition">Home</a>
+        <a href="#" class="text-brightRedLight font-kumbh hover:text-brightRed hover:scale-110 transition">About</a>
+        <a href="#" class="text-brightRedLight font-kumbh hover:text-brightRed hover:scale-110 transition">Portfolio</a>
+        <a href="#" class="text-brightRedLight font-kumbh hover:text-brightRed hover:scale-110 transition">Contact</a>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <button id="menu-btn" class="right-4 block absolute arrow sm:hidden focus:outline-none"></button>
+
+      <div class="sm:hidden">
+        <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold font-kumbh bg-brightRed sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#" class="text-brightRedLight font-kumbh hover:text-white hover:scale-110 transition">Home</a>
+          <a href="#" class="text-brightRedLight font-kumbh hover:text-white hover:scale-110 transition">About</a>
+          <a href="#" class="text-brightRedLight font-kumbh hover:text-white hover:scale-110 transition">Portfolio</a>
+          <a href="#" class="text-brightRedLight font-kumbh hover:text-white hover:scale-110 transition">Contact</a>
+        </div>
+      </div>
+     
+    </div>
+  <script src="./script.js"></script>
+  </body>
+</html>
