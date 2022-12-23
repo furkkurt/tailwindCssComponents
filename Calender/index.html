@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Calender Component</title>
+  </head>
+  <body>
+    <div class="grid place-items-center h-screen">
+      <div class="pb-4 flex flex-col items-center justify-center space-y-2 bg-metal w-5/6 h-2/3 rounded-t-full">
+        <div class="items-center justify-center grid h-screen place-items-center relative top-8 rounded-xl w-1/2 h-1/4 bg-darkerMetal text-paper font-concert text-5xl sm:text-6xl md:text-8xl xl:text-16xl">
+          <p class="relative sm:bottom-2 lg:bottom-6 xl:bottom-22">
+            TODAY IS
+          </p>
+        </div>
+        <div class="flex flex-row items-center justify-center space-x-8 relative bottom-31 rounded-lg w-full h-1/2">
+          <div class="flex flex-col items-center justify-center space-y-4 w-1/4 h-full">
+            <div id="day" class="flex items-center justify-center bg-paper rounded-xl w-full h-2/5 font-concert text-6xl pb-8 sm:text-8xl"></div>
+            <div id="month" class="flex items-center justify-center bg-paper rounded-xl w-full h-2/5 font-concert text-6xl sm:text-8xl pb-8"></div>
+          </div>
+          <div class="flex flex-row space-y-4 items-center justify-center bg-paper rounded-xl w-1/4 h-1/2 sm:h-2/3 md:h-full">
+            <div id = "num1" class="absolute flex items-center justify-center pb-16 pr-2 bg-transparent rounded-xl w-1/4 h-full font-concert text-16xl sm:pb-32 sm:text-20xl md:text-20xl md:text-32xl"></div>
+            <div class="absolute flex bg-metal h-4 w-1/3 space-x-10 pl-2 sm:w-1/4 sm:space-x-18 md:space-x-24 xl:space-x-48">
+              <p class="halfCircle rotate-90"></p>
+              <p class="halfCircle rotate-90"></p>
+            </div>
+          </div>          
+          <div class="flex flex-row space-y-4 items-center justify-center bg-paper rounded-xl w-1/4 h-1/2 sm:h-2/3 md:h-full">
+            <div id = "num2" class="absolute flex items-center justify-center pb-16 pr-2 bg-transparent rounded-xl w-1/4 h-full font-concert text-16xl sm:pb-32 sm:text-20xl md:text-20xl md:text-32xl"></div>
+            <div class="absolute flex bg-metal h-4 w-1/3 space-x-10 pl-2 sm:w-1/4 sm:space-x-18 md:space-x-24 xl:space-x-48">
+              <p class="halfCircle rotate-90"></p>
+              <p class="halfCircle rotate-90"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
