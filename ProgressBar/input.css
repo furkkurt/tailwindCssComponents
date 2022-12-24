@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 210px solid transparent;
+  border-bottom: 210px solid transparent;
+  border-right: 310px solid;
+}
+
+.inner-triangle {
+  position: relative;
+  top: -200px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+  border-right: 300px solid white;
+}
+
+.triangle-progress {
+  position: relative;
+  top: -15px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #F1D816;
+}

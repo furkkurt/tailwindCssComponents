@@ -1,0 +1,29 @@
+TOP PART
+FROM
+top    -15
+left   285
+btop   15
+bbot   15
+bright 15
+
+TO
+top    -195
+left   5
+btop   195
+bbot   195
+bright 295
+
+BOTTOM PART
+FROM
+top    -15
+left   285
+btop   15
+bbot   15
+bright 15
+
+TO
+top    -195
+left   5
+btop   195
+bbot   195
+bright 295
