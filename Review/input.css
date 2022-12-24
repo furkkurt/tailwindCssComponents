@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.unchecked {
+  color: gray;
+}
+.checked {
+  color: orange;
+}
+
+.inputBox {
+	background: #ffffff;
+  -moz-box-sizing: border-box;
+  border: 1px solid #CBD5DD;
+  border-radius: 2px;
+  max-height: 70px;
+  max-width: 450px;
+  word-wrap: break-word;
+  margin: 0;
+  min-height: 33px;
+  overflow: auto;
+  position: relative;
+  width: 450px;
+  padding-left: 5px;
+  vertical-align: top;
+  box-sizing: border-box;
+
+}

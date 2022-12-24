@@ -601,6 +601,18 @@ video {
   top: 6rem;
 }
 
+.bottom-1\/4 {
+  bottom: 25%;
+}
+
+.top-1\/4 {
+  top: 25%;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
 .flex {
   display: flex;
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+			  <meta charset="UTF-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width,initial-scale=1.0">
+				<title>Interactive Rating</title>
+				<link rel="stylesheet" href="./css/main.css"/>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			</head>
+			<body>
+				<main class="flex justify-center items-center w-screen h-screen bg-veryDarkBlue">
+					<div class="w-96 h-content rounded-lg bg-gradient-to-t from-darkerThanLessBlue to-lessDarkBlue p-6">
+						<!-- Star Icon -->
+						<div class="rounded-full w-12 h-12 bg-grayishBlue p-4">
+							<span class="fa fa-star checked"></span>
+						</div>
+						<h2 class="pt-6 text-white text-3xl font-sans font-bold">How do you like this title?</h2>
+						<p class="pt-6 text-lightGray">
+							The minimum length for reviews is 600 characters to ensure the most value to our users. Reviews which are padded with junk text will be discarded.
+						</p>
+						<!-- Ratings -->
+						<div class="pt-6 space-x-6 flex flex-rows">
+							<div id="rank1" onmouseover="highlightStars(1)" onmouseout="highlightStars(0)" class="flex rounded-full w-12 h-12 bg-grayishBlue justify-center items-center text-lightGray hover:bg-brightOrange hover:text-white"><span id="star1" class="fa fa-star unchecked"></span></div>
+							<div id="rank2" onmouseover="highlightStars(2)" onmouseout="highlightStars(0)" class="flex rounded-full w-12 h-12 bg-grayishBlue justify-center items-center text-lightGray hover:bg-brightOrange hover:text-white"><span id="star2" class="fa fa-star unchecked"></span></div>
+							<div id="rank3" onmouseover="highlightStars(3)" onmouseout="highlightStars(0)" class="flex rounded-full w-12 h-12 bg-grayishBlue justify-center items-center text-lightGray hover:bg-brightOrange hover:text-white"><span id="star3" class="fa fa-star unchecked"></span></div>
+							<div id="rank4" onmouseover="highlightStars(4)" onmouseout="highlightStars(0)" class="flex rounded-full w-12 h-12 bg-grayishBlue justify-center items-center text-lightGray hover:bg-brightOrange hover:text-white"><span id="star4" class="fa fa-star unchecked"></span></div>
+							<div id="rank5" onmouseover="highlightStars(5)" onmouseout="highlightStars(0)" class="flex rounded-full w-12 h-12 bg-grayishBlue justify-center items-center text-lightGray hover:bg-brightOrange hover:text-white"><span id="star5" class="fa fa-star unchecked"></span></div>
+						</div>
+						<textarea id="message" rows="4" class="block mt-6 p-2.5 w-full text-sm text-lightGray bg-grayishBlue" placeholder="Write your review here"></textarea>
+						<!-- Submit Button -->
+						<div id="submit" class="mt-6 flex justify-center items-center bg-brightOrange rounded-full w-full h-9 text-white font-mono hover:bg-white hover:text-brightOrange">
+							SUBMIT
+						</div>
+					</div>
+				</main>
+				<script src="./script.js"></script>
+			</body>
+		</html>
