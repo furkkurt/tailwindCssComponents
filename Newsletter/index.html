@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Newsletter Component</title>
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-gradient-to-b from-veryDarkBlue to-grayishBlue grid place-items-center">
+      <div class="flex flex-col w-full h-full justify-center place-items-center space-y-4">
+        <h1 class="text-4xl text-blueishWhite font-bold font-kumbh">Join Our Newsletter</h1>
+        <p class="w-2/3 text-center text-xl text-dimmerGrayishWhite font-kumbh">Write down you e-mail address below to be notified of the latest news!</p>
+        <div class="flex flex-row justify-center place-items-center w-2/3 h-12">
+          <div onmouseover="showMail()" class="bg-veryDarkBlue w-8 h-8 rounded-l-md grid place-items-center">
+          <span class="fa fa-envelope text-white"></span>
+          </div>
+          <input onmouseout="showMail()" id="mail" type="text" class="bg-veryDarkBlue pl-2 h-8 hidden text-blueishWhite" placeholder="Type your mail address here"/>
+          <button href="#" class="w-28 h-full text-xl font-kumbh font-bold bg-veryDarkBlue text-blueishWhite rounded-r-md h-8">
+					  Subscribe!
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
